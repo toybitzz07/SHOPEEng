@@ -3,73 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online Shop - Product</title>
+<title>Buksan Mo Papasukin Ako | Online Shop</title>
 
 <style>
+
 body{
 font-family: Arial, sans-serif;
 margin:0;
-padding:0;
 background:#f5f5f5;
 }
 
+
+
 header{
-background:#ffaa00;
+background:#ff5722;
 color:white;
 padding:20px;
 text-align:center;
+font-size:22px;
+font-weight:bold;
 }
+
+
+.search-bar{
+text-align:center;
+padding:15px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-bar input{
+width:60%;
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+
 
 .container{
-max-width:900px;
+max-width:1200px;
 margin:30px auto;
-padding:20px;
-background:white;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:10px;
 }
+
+
 
 .product{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-margin-bottom:40px;
-border-bottom:1px solid #ddd;
-padding-bottom:30px;
+background:white;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+transition:0.3s;
 }
+
+.product:hover{
+transform:scale(1.03);
+}
+
+
 
 .product img{
-width:300px;
-border-radius:10px;
+width:100%;
+height:200px;
+object-fit:cover;
 }
+
+
 
 .product-details{
-flex:1;
+padding:15px;
 }
 
-.product-details h1{
-margin-top:0;
+.product-details h3{
+margin:0;
+font-size:18px;
 }
 
 .price{
-font-size:24px;
-color:#e91e63;
+color:#ff5722;
+font-size:20px;
+font-weight:bold;
 margin:10px 0;
 }
 
-.order-button{
-display:inline-block;
-padding:12px 25px;
-background:#e91e63;
+
+
+.order-btn{
+display:block;
+text-align:center;
+background:#ff5722;
 color:white;
-text-decoration:none;
+padding:10px;
 border-radius:5px;
+text-decoration:none;
 font-weight:bold;
 transition:0.3s;
 }
 
-.order-button:hover{
-background:#d81b60;
+.order-btn:hover{
+background:#e64a19;
 }
+
+
 
 footer{
 text-align:center;
@@ -77,80 +116,71 @@ padding:20px;
 background:#eee;
 margin-top:40px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
-<h1>BUKSAN MO PAPASUKIN AKO ONLINE SHOP</h1>
+BUKSAN MO PAPASUKIN AKO ONLINE SHOP
 </header>
+
+<div class="search-bar">
+<input type="text" placeholder="Search product...">
+</div>
 
 <div class="container">
 
-<!-- PRODUCT 1 -->
+
 <div class="product">
-<div class="product-image">
 <img src="https://i.ibb.co/Kzb38MNk/feb22-perspective.png">
-</div>
-
 <div class="product-details">
-<h1>Multi-Function Drawing Table</h1>
-<p>High-quality drawing table with adjustable tilt, rotation, and ergonomic design for artists.</p>
-<p class="price">₱38,000</p>
-<a class="order-button" href="https://web.facebook.com/johnmichael.hidalgo.39" target="_blank">Order Now</a>
+<h3>Multi-Function Drawing Table</h3>
+<p>Adjustable tilt and rotation drawing table perfect for artists.</p>
+<div class="price">₱38,000</div>
+<a class="order-btn" href="https://web.facebook.com/johnmichael.hidalgo.39" target="_blank">Order Now</a>
 </div>
 </div>
 
-<!-- PRODUCT 2 -->
+
 <div class="product">
-<div class="product-image">
-<img src="https://i.ibb.co/0K9hK0k/canister.jpg">
-</div>
-
+<img src="f42c354dceb8a40573e07b5a96c7017d.webp">
 <div class="product-details">
-<h1>Art Supply Canister</h1>
-<p>Durable storage canister for keeping pencils, brushes, and art tools organized.</p>
-<p class="price">₱350</p>
-<a class="order-button" href="https://ph.shp.ee/quRh9vdn" target="_blank">Order Now</a>
+<h3>Art Supply Canister</h3>
+<p>Durable container for pencils, brushes and art tools.</p>
+<div class="price">₱454</div>
+<a class="order-btn" href="https://ph.shp.ee/quRh9vdn" target="_blank">Order Now</a>
 </div>
 </div>
 
-<!-- PRODUCT 3 -->
+
 <div class="product">
-<div class="product-image">
-<img src="https://i.ibb.co/vB4LwYp/chair.jpg">
-</div>
-
+<img src="ph-11134207-81ztq-mhr8odx26q6863@resize_w900_nl.webp">
 <div class="product-details">
-<h1>Ergonomic Artist Chair</h1>
-<p>Comfortable chair designed for long drawing sessions with proper back support.</p>
-<p class="price">₱2,500</p>
-<a class="order-button" href="https://ph.shp.ee/y7SrQZb7" target="_blank">Order Now</a>
+<h3>Ergonomic Artist Chair</h3>
+<p>Comfortable chair designed for long drawing sessions.</p>
+<div class="price">₱799</div>
+<a class="order-btn" href="https://ph.shp.ee/y7SrQZb7" target="_blank">Order Now</a>
 </div>
 </div>
 
-<!-- PRODUCT 4 -->
+
 <div class="product">
-<div class="product-image">
-<img src="https://i.ibb.co/5K2nH7n/drawing-materials.jpg">
-</div>
-
+<img src="sg-11134201-7rbnf-lmfj78if6q7ta1@resize_w900_nl.webp">
 <div class="product-details">
-<h1>Complete Drawing Materials Set</h1>
-<p>Includes pencils, sketch pads, erasers, rulers, and other essential art materials.</p>
-<p class="price">₱1,200</p>
-<a class="order-button" href="https://ph.shp.ee/BTU7Hmht" target="_blank">Order Now</a>
+<h3>Durer T-Square 24” / 36”</h3>
+<p>Perfect for architecture and engineering drafting.</p>
+<div class="price">₱1,200</div>
+<a class="order-btn" href="https://ph.shp.ee/BTU7Hmht" target="_blank">Order Now</a>
 </div>
 </div>
 
 </div>
 
 <footer>
-© 2026 SHOPEEng. All rights reserved.
+© 2026 Buksan Mo Papasukin Ako Online Shop
 </footer>
 
 </body>
 </html>
-
